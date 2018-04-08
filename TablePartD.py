@@ -1,5 +1,7 @@
 import happybase as hb
 
+# cols 'personal:hero', 'personal:power', 'professional:name', 'professional:xp', 'custom:color'
+
 connection = hb.Connection()
 
 powers = connection.table('powers')
@@ -11,4 +13,4 @@ def printrow(table, row_id, *args):
         outlist.append('%s: %s' % (a, row[a]))
     print(', '.join(outlist))
 
-printrow(powers, 'row1', 'hero', 'power', 'name', 'xp', 'color')
+printrow(powers, 'row1', 'personal:hero', 'personal:power', 'professional:name', 'professional:xp', 'custom:color')
