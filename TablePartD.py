@@ -13,4 +13,4 @@ def printrow(table, row_id, *args):
         outlist.append('%s: %s' % (a, row[a]))
     print(', '.join(outlist))
 
-printrow(powers, 'row1', 'personal:hero', 'personal:power', 'professional:name', 'professional:xp', 'custom:color')
+printrow(powers, 'row1', b'personal:hero', b'personal:power', b'professional:name', b'professional:xp', b'custom:color')
