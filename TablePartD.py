@@ -10,7 +10,8 @@ def printrow(table, row_id, *args):
     row = powers.row(row_id)
     outlist = []
     for a in args:
-        outlist.append('%s: %s' % (a, row[a]))
+        rowname = str(a.split(b':')[1])
+        outlist.append('%s: %s' % (rowname, row[a]))
     print(', '.join(outlist))
 
 printrow(powers, 'row1', b'personal:hero', b'personal:power', b'professional:name', b'professional:xp', b'custom:color')
