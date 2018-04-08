@@ -15,3 +15,5 @@ def printrow(table, row_id, *args):
     print(', '.join(outlist))
 
 printrow(powers, 'row1', b'personal:hero', b'personal:power', b'professional:name', b'professional:xp', b'custom:color')
+printrow(powers, 'row19', b'personal:hero', b'custom:color')
+printrow(powers, 'row1', b'personal:hero', b'professional:name', b'custom:color')
