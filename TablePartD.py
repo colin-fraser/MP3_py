@@ -10,7 +10,7 @@ def printrow(table, row_id, *args):
     row = powers.row(row_id)
     outlist = []
     for a in args:
-        rowname = (a.split(b':')[1]).encode('utf-8')
+        rowname = (a.split(b':')[1]).decode('utf-8')
         outlist.append('%s: %s' % (rowname, row[a]))
     print(', '.join(outlist))
 
