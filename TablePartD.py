@@ -4,7 +4,7 @@ connection = hb.Connection()
 
 powers = connection.table('powers')
 
-def printrow(table, row_id, **args):
+def printrow(table, row_id, *args):
     row = powers.row(row_id)
     outlist = []
     for a in args:
